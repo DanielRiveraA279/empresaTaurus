@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  margin: 0;
+  overflow-x: hidden; /*Desabilitar scroll horizontal */
+}
+
+/* Header/logo Title */
+.header {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  padding: 1%;
+}
+
+.flex-item-left {
+  display: flex;
+  flex: 60%;
+  align-items: center;
+  justify-content: left;
+  background-color: white;
+}
+
+.flex-item-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-subitem-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.flex-valueitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  margin-right: 10px;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .flex-item-right {
+    flex-direction: column;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .flex-item-left img {
+    width: 300px;
+    margin-bottom: 5px;
+  }
+}
+
+/*CLASES CSS PARA NAVBAR RESPONSIVE*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(255, 238, 238);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #fcce11;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display:inline;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown {
+    color: red;
+  }
+
+
+}
+
+/*DROPDOWN RESPONSIVE*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: rgb(255, 238, 238);
+  background-color: inherit;
+  margin: 0;
+}
+
+a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(255, 238, 238);
+  color: black;
+}
+
+.activar_dropdown:hover .dropdown-content {
+  display:inline;
+  margin-left: 0%;
+}
+
+@media screen and (max-width: 800px) {
+  .activar_dropdown:hover .dropdown-content {
+    display:inline;
+    margin-left: 0%;
+    margin-top: -30%;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 238, 238);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*Link de Ubicacion - React-router-dom*/
+.link_ubicacion{
+  text-decoration: none; /*quitar subrayado al link*/
+  color: black;
+
+}
+
+.link_ubicacion:hover{
+  background-color: white;
+}
+
+
+
+

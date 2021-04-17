@@ -1,0 +1,329 @@
+.titulo {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 20px;
+  color: rgb(66, 66, 66);
+}
+
+.titulo_primary {
+  border-top: 1px solid rgb(66, 66, 66);
+  border-bottom: 1px solid rgb(66, 66, 66);
+  padding: 40px;
+  margin: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+.categoria {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(114, 113, 113);
+  margin-bottom: 10px;
+}
+
+.categoria_item {
+  padding: 10px;
+  border-left: auto;
+  border-right: auto;
+}
+
+.info {
+  display: flex;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info_contact {
+  margin-top: 20px;
+  margin: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1130px;
+  height: 30px;
+}
+
+.descrip_usados {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 1130px;
+  height: 30px;
+}
+
+.info_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.info_trayectoria {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(179, 179, 179);
+  font-style: italic;
+}
+
+.info_trayectoria h4 {
+  font-style: italic;
+}
+
+.item_info {
+  font-size: 16px;
+}
+
+.categoria_item:hover {
+  cursor: pointer;
+  color: #ffce00;
+  font-weight: bold;
+
+  /* border-width: 1px;
+  border-style: solid;
+  color: black;
+  border-color: rgb(197, 197, 197);
+  padding: 5px;
+  border-radius: 20px 0px;
+  cursor: pointer;
+  transition: 0.2s; */
+}
+
+.btn {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial,
+    sans-serif;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: #fff;
+  border: 0;
+  transition: all 200ms ease;
+}
+
+.btn-border {
+  display: inline-block;
+  margin: 5px;
+}
+.btn-border .btn {
+  display: block;
+  margin: 2px;
+}
+
+.btn_border_nobedad {
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffce00;
+  transition: all 200ms ease;
+}
+
+.btn_border_nobedad:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #ffce00;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .info_trayectoria h2 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .info_trayectoria h4 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .btn {
+    padding: 0.7rem 2rem;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .info {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .info_contact {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .categoria {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    border-color: rgb(114, 113, 113);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .titulo_primary {
+    font-size: 16px;
+  }
+}
+
+.container_usados {
+  width: 100%;
+  background: red;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 80px;
+}
+
+/*Esto encierra la posicion absoluta de la clase box que contiene efecto*/
+.principal {
+  display: flex;
+  flex-direction: row;
+}
+
+.container_venta_usados {
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  height: 200px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 30px solid #ffce00;
+}
+
+.img_venta_usados {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffce00;
+  font-weight: normal;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.container_venta_usados:hover .overlay {
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .principal {
+    flex-wrap: wrap;
+  }
+}
+
+.container_novedades {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container_novedad_titulo {
+  display: flex;
+  margin: 10px;
+}
+
+.container_novedad_tarjeta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tarjeta_item {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 45%;
+  padding: 2px 16px;
+  margin: 5px;
+}
+
+.tarjeta_item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta_item_fecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .container_novedad_tarjeta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container_novedad_tarjeta .tarjeta_item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .btn_border_nobedad {
+    width: 30%;
+  }
+}
+
+.titulo_tarjeta:hover {
+  cursor: pointer;
+}
+
+
+/*Desbordamiento de la descripcion del texto para cortarlo con tres puntos*/
+.module {
+  width: 100%;
+  margin: 0 0 1em 0;
+  overflow: hidden;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}

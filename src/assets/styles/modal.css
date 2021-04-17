@@ -1,0 +1,148 @@
+.container_modal_consulta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.titulo_modal_consulta {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content_modal_consulta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container_image_modal {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form_modal_consulta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input[type="text"]:hover {
+  border: 1px solid gray;
+}
+
+select,
+option {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin: 8px 0;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  font-size: 14px;
+}
+
+select:hover {
+  border: 1px solid gray;
+}
+
+textarea:hover {
+  border: 1px solid gray;
+}
+
+.img_consulta {
+  width: 85%;
+  height: 85%;
+  margin-bottom: 38%;
+  border: 1px solid gray;
+
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.icon_consulta_close:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .content_modal_consulta{
+    flex-direction: column;
+    width: 100%;
+  }
+  .icon_consulta_close{
+    display: none;
+  }
+
+  .titulo_modal_consulta{
+    display: none;
+  }
+
+  .img_consulta{
+    width: 100%;
+  }
+
+  .form_modal_consulta{
+    margin-top: -50px;
+  }
+
+}
+
+/*Quita el borde remarcado al hacer focus*/
+input:focus, textarea:focus, select:focus, button:focus{
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+

@@ -1,0 +1,91 @@
+
+  .container_empresa {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 99.9%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+  }
+  .container_empresa:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  @media screen and (max-width: 800px) {
+      .container_empresa{
+          flex-direction: column;
+          margin-top: 40px;
+          margin-bottom: 40px;
+         
+      }
+  }
+  
+  .descripcion_empresa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #f3de8a;
+    border: none;
+    padding: 5px;
+  }
+  
+  .container_mision_vision {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+  
+  .vision_empresa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background-color: #fcce11;
+    color: white;
+    padding: 10px;
+    border: none;
+  }
+  
+  .mision_empresa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background-color: #222222;
+    color: white;
+    padding: 10px;
+    border: none;
+  }
+  
+  .descripcion_empresa h1 {
+  color: #fcce11;
+    font-weight: bold;
+  }
+  
+  .vision_empresa h1 {
+    font-weight: bold;
+  }
+  
+  .mision_empresa h1 {
+    color: #fcce11;
+    font-weight: bold;
+  }
